@@ -1,0 +1,60 @@
+@media (max-width: 1440px) {
+    .products {
+        padding: 15%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .product {
+        margin-top: -210px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .main_section {
+        padding: 10%;
+    }
+
+    .products {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 8%;
+    }
+
+    .product {
+        margin-top: auto;
+    }
+
+    .benefits, .mentions {
+        flex-wrap: wrap;
+    }
+
+    .benefit, .mention {
+        flex-wrap: wrap;
+    }
+
+    .benefit img{
+        max-width: 250px;
+        max-height: initial;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .products {
+        padding: 5%;
+    }
+}
+
+@media (max-width: 320px) {
+    footer {
+        padding: 10px;
+        text-align: center;
+        display: inherit;
+    }
+
+    .option {
+        padding-top: 10px;
+    }
+}

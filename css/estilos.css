@@ -21,7 +21,7 @@
 html, body {
     padding: 0;
     margin: 0;
-    font-size: var(--normal);
+    /* font-size: var(--normal); */
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -39,9 +39,9 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    min-height: 60px;
     background-color: var(--blue-color);
     padding: var(--space);
-    color: var(--white-color);
 }
 
 .logo_cat {
@@ -70,7 +70,7 @@ nav li a:hover {
 /* Main Section */
 
 .main_section {
-    padding: 15%;
+    padding: 10%;
     text-align: center;
 }
 
@@ -78,21 +78,23 @@ nav li a:hover {
 
 .products {
     background-image: url('../images/curve.png');
-    max-height: 50px;
+    height: 50px;
     background-size: cover;
     background-position: center top;
-    padding: 15%;
+    background-repeat: no-repeat;
+    padding: 10%;
     display: flex; 
+    justify-content: center;
 }
 
 .product {
-    padding: var(--space);
-    margin-top: -240px;
+    padding: var(--space-2);
+    margin-top: -280px;
 }
 
 .product .content {
     background-color: var(--white-color);
-    padding: var(--space);
+    padding: var(--space-2);
     box-shadow: var(--box);
     border-radius: 3px;
 }
@@ -123,21 +125,19 @@ nav li a:hover {
 /* Benefits */
 
 .benefits {
-    padding: 10%;
+    padding: 8%;
     display: flex; 
+    justify-content: space-evenly;
 }
 
 .benefit {
     text-align: center;
+    width: 400px;
     padding: var(--space-2);
 }
 
 .benefit img {
-    max-height: 100px;
-}
-
-.text_benefit {
-    /* text-align: justify; */
+    max-height: 180px;
 }
 
 /* Mentions */
@@ -149,10 +149,13 @@ h2.mention_title {
 .mentions {
     display: flex;
     padding: 5%;
+    justify-content: space-evenly;
 }
 
 .mention {
+    text-align: center;
     padding: var(--space);
+    width: 300px;
 }
 
 .mention img {
@@ -167,3 +170,22 @@ h2.mention_title {
     padding: var(--space);
 }
 
+.content_mention p {
+    padding-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: var(--normal);
+    background-color: var(--black-color);
+    padding: var(--space-2);
+    color: var(--white-color);
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: var(--normal);
+}
