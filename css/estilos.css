@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
 /* Variables */
+
 :root {
     /* Colores */
     --blue-color: #11AFB4;
@@ -12,6 +13,7 @@
     --normal: 12px;
     /* Espaciado */
     --space: 10px;
+    --space-2: 20px;
     /* Box Shadow */
     --box: 0 0 2px 1px #e6e5e9;
 }
@@ -23,19 +25,27 @@ html, body {
     font-family: 'Open Sans', sans-serif;
 }
 
+p {
+    font-size: var(--normal);
+}
+
+hr {
+    opacity: 0.2;
+}
+
 /* NavBar */
 
 nav {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: var(--blue-color);
     padding: var(--space);
     color: var(--white-color);
-    justify-content: space-between;
-    align-items: center;
 }
 
 .logo_cat {
-    width: 50px;
+    height: 30px;
 }
 
 nav ul {
@@ -50,6 +60,7 @@ nav li {
 nav li a {
     color: var(--black-color);
     text-decoration: none;
+    font-size: var(--normal);
 }
 
 nav li a:hover {
@@ -57,17 +68,20 @@ nav li a:hover {
 } 
 
 /* Main Section */
+
 .main_section {
     padding: 15%;
     text-align: center;
 }
+
+/* Products */
 
 .products {
     background-image: url('../images/curve.png');
     max-height: 50px;
     background-size: cover;
     background-position: center top;
-    padding: 20%;
+    padding: 15%;
     display: flex; 
 }
 
@@ -80,13 +94,14 @@ nav li a:hover {
     background-color: var(--white-color);
     padding: var(--space);
     box-shadow: var(--box);
+    border-radius: 3px;
 }
 
-.img_content {
+.image_product {
     text-align: center;
 }
 
-.img_content img {
+.image_product img {
     height: 150px;
 }
 
@@ -104,3 +119,51 @@ nav li a:hover {
 .main_button:hover {
     background-color: #0d8286 ;
 }
+
+/* Benefits */
+
+.benefits {
+    padding: 10%;
+    display: flex; 
+}
+
+.benefit {
+    text-align: center;
+    padding: var(--space-2);
+}
+
+.benefit img {
+    max-height: 100px;
+}
+
+.text_benefit {
+    /* text-align: justify; */
+}
+
+/* Mentions */
+
+h2.mention_title {
+    text-align: center;
+}
+
+.mentions {
+    display: flex;
+    padding: 5%;
+}
+
+.mention {
+    padding: var(--space);
+}
+
+.mention img {
+    width: 100%;
+}
+
+.content_mention {
+    box-shadow: var(--box);
+}
+
+.mention .text {
+    padding: var(--space);
+}
+
