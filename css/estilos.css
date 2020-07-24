@@ -159,6 +159,7 @@ h2.mention_title {
 }
 
 .mention img {
+    height: 200px;
     width: 100%;
 }
 
@@ -193,4 +194,20 @@ footer a {
 /* Producto */
 .pic_product {
     max-width: 100%;
+}
+
+/* Venta */
+.modulo_pago {
+    background-color: var(--white-color);
+    box-shadow: var(--box);
+    padding: 10px;
+}
+
+.modulo_images {
+    text-align: center;
+    margin: auto;
+}
+
+#formulario {
+    margin: 3.5% 0;
 }
