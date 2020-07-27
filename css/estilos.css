@@ -222,7 +222,8 @@ footer a {
 }
 
 #formulario {
-    margin: 4%  0;
+    /* height: 67vh; */
+    padding: 10% 0;   
 }
 
 .modulo_pago .main_button {
